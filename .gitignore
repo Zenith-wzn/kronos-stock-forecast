@@ -1,0 +1,73 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Local configuration, logs and editor files
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.temp
+~$*
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Downloaded model/runtime environments
+.runtime/
+chronos2/
+timesfm3/
+sspt/
+master/
+
+# Raw market files are documented in data/README.md but are not vendored.
+data/csi300_daily/
+data/csi800_daily/
+data/yahoo_sp500/
+
+# Large generated experiment directories and caches.
+train3/
+results/analysis/
+results/continual_multiseed/
+results/continual_seed100_mae_gate_audit/
+results/dashboards/
+results/figures/
+
+# Keep only compact, reviewable result pages and summaries in the repository.
+results/cumulative_return_curves/*.csv
+results/cumulative_return_curves/*.json
+results/cumulative_return_curves/odestream_vs_existing/*_daily_returns.csv
+results/cumulative_return_curves/odestream_vs_existing/*_normalized_predictions.csv
+results/cumulative_return_curves/odestream_vs_existing/*_portfolio_holdings.csv
+results/cumulative_return_curves/odestream_vs_existing/*_summary.json
+
+# Temporary analysis scripts and copied source/paper artifacts at the old root.
+tmp_*
+refine-logs/
+MANIFEST.*
+findings.md
+odestream-*.py
+odestream-*.md
+odestream-*.png
+papers-*
+continual_ABC_mae_strict_gate_retry01/
+continual_ABC_mae_strict_gate_retry01.zip
+
+# Do not commit model checkpoints or serialized arrays anywhere.
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz

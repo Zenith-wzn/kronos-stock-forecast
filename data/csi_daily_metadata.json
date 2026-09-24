@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-08-20",
+  "timezone": "Asia/Shanghai",
+  "scope": {
+    "constituents": "current constituent pools as downloaded on 2026-08-20",
+    "start_date": "2016-01-01",
+    "requested_end_date": "2026-08-20",
+    "latest_completed_trading_day": "2026-08-19"
+  },
+  "adjustment": "unadjusted",
+  "frequency": "daily",
+  "schema": [
+    "date",
+    "code",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "volume_unit": "shares",
+  "file_naming": "{exchange}_{6-digit-code}.csv, e.g. sh_600000.csv",
+  "sources": [
+    {
+      "name": "Eastmoney historical K-line API",
+      "files": 324,
+      "parameters": {
+        "klt": "101",
+        "fqt": "0"
+      },
+      "volume_conversion": "lots multiplied by 100 to shares"
+    },
+    {
+      "name": "BaoStock historical K data",
+      "files": 476,
+      "parameters": {
+        "frequency": "d",
+        "adjustflag": "3"
+      },
+      "volume_conversion": "already reported in shares"
+    }
+  ],
+  "outputs": {
+    "CSI800": {
+      "constituent_file": "data/stock_pools/csi800_constituents.csv",
+      "daily_directory": "data/csi800_daily",
+      "stock_files": 800
+    },
+    "CSI300": {
+      "constituent_file": "data/stock_pools/csi300_constituents.csv",
+      "daily_directory": "data/csi300_daily",
+      "stock_files": 300
+    }
+  }
+}

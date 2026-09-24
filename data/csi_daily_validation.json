@@ -1,0 +1,26 @@
+{
+  "CSI800": {
+    "files": 800,
+    "rows": 1771816,
+    "min_date": "2016-01-04",
+    "max_date": "2026-08-19",
+    "latest_day_files": 800,
+    "earlier_end_files": 0,
+    "end_date_distribution": {
+      "2026-08-19": 800
+    }
+  },
+  "CSI300": {
+    "files": 300,
+    "rows": 689416,
+    "min_date": "2016-01-04",
+    "max_date": "2026-08-19",
+    "latest_day_files": 300,
+    "earlier_end_files": 0,
+    "end_date_distribution": {
+      "2026-08-19": 300
+    }
+  },
+  "validation_error_count": 0,
+  "validation_errors_sample": []
+}

@@ -1,0 +1,14 @@
+{
+  "downloaded_at": "2026-08-19T19:29:12+08:00",
+  "source": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+  "source_index_types": {
+    "csi300": "1",
+    "csi500": "3"
+  },
+  "construction": "CSI 800 = current CSI 300 union current CSI 500",
+  "counts": {
+    "csi300": 300,
+    "csi500": 500,
+    "csi800": 800
+  }
+}

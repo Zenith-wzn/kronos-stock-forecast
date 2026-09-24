@@ -1,0 +1,74 @@
+{
+  "dataset": "CSI300",
+  "test_start": "2025-07-01",
+  "test_end": "2026-06-05",
+  "top_k": 30,
+  "drop_n": 3,
+  "min_holding_days": 5,
+  "cost_rate": 0.0015,
+  "initial_capital": 1000000.0,
+  "annualization_days": 252,
+  "portfolio_rule": "existing run_csi300_top10pct_backtest.simulate",
+  "common_key_policy": "intersection of all model prediction keys and Adapter actual_return_1 keys",
+  "generated_at": "2026-09-23T13:55:14.680124+00:00",
+  "sample": {
+    "common_rows": 65425,
+    "common_dates": 225,
+    "common_start": "2025-07-01",
+    "common_end": "2026-06-04",
+    "actual_return_reference": "adapter_continual actual_return_1, joined by (date, stock)",
+    "source_actual_return_max_abs_difference_vs_reference": {
+      "odestream_direct": 1.6020069767280765e-07,
+      "adapter_continual": 0.0,
+      "prediction_adapter": 1.0386657700589552e-08,
+      "ranking_adapter": 1.0386657700589552e-08,
+      "continual_A": null,
+      "continual_B": null,
+      "continual_C": null
+    },
+    "sources": {
+      "odestream_direct": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\odestream_direct_24x1\\predictions.csv",
+        "rows_before_common_intersection": 66709,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      },
+      "adapter_continual": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\adapter_continual\\predictions.csv",
+        "rows_before_common_intersection": 66103,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      },
+      "prediction_adapter": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\C_prediction_adapter\\predictions.csv",
+        "rows_before_common_intersection": 66103,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      },
+      "ranking_adapter": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\D_ranking_adapter\\predictions.csv",
+        "rows_before_common_intersection": 66103,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      },
+      "continual_A": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\continual_ABC\\predictions_A.csv",
+        "rows_before_common_intersection": 66103,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      },
+      "continual_B": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\continual_ABC\\predictions_B.csv",
+        "rows_before_common_intersection": 66103,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      },
+      "continual_C": {
+        "path": "C:\\Users\\huawei_wzn\\Desktop\\kronos\\train3\\csi300_csi800_aligned_seed100\\experiments\\continual_ABC\\predictions_C.csv",
+        "rows_before_common_intersection": 66103,
+        "rows_after_common_intersection": 65425,
+        "date_count_after_common_intersection": 225
+      }
+    }
+  }
+}
