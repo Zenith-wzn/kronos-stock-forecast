@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 # Python caches and local environments
 __pycache__/
 *.py[cod]
+=======
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+>>>>>>> origin/main
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
+<<<<<<< HEAD
 .venv/
 venv/
 env/
@@ -18,6 +26,16 @@ env/
 *.tmp
 *.temp
 ~$*
+=======
+
+# Local virtual environments
+.venv/
+.venv_kronos/
+venv/
+env/
+
+# Editor and OS files
+>>>>>>> origin/main
 .idea/
 .vscode/
 *.code-workspace
@@ -25,6 +43,7 @@ env/
 Thumbs.db
 desktop.ini
 
+<<<<<<< HEAD
 # Downloaded model/runtime environments
 .runtime/
 chronos2/
@@ -71,3 +90,21 @@ continual_ABC_mae_strict_gate_retry01.zip
 *.ckpt
 *.npy
 *.npz
+=======
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+~$*
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Model/download caches
+.cache/
+huggingface/
+
+# Keep train1/, train2/, train3/ and their experiment outputs tracked.
+>>>>>>> origin/main
